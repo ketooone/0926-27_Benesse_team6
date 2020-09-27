@@ -60,7 +60,6 @@
 <script src="js/respond.min.js"></script>
 <![endif]-->
 <script language="javascript" type="text/javascript">
-	// イベントハンドラー
 	function change() {
 		var course = document.getElementById("course").value;
 		var date2 = document.getElementById("date2");
@@ -75,7 +74,6 @@
 
 		}
 	}
-
 </script>
 </head>
 <body>
@@ -102,7 +100,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-1">
-						<div id="fh5co-logo"><a href="https://www.benesse.co.jp/">Benesse</a></div>
+						<div id="fh5co-logo"><a href="https://www.benesse.co.jp/">Benesse<span>.</span></a></div>
 					</div>
 					<div class="col-xs-11 text-right menu-1">
 						<ul>
@@ -133,9 +131,9 @@
 					<div class="row">
 							<div class="col-md-8 col-md-offset-2 text-center">
 									<div class="display-t">
-										<div class="display-tc animate-box" data-animate-effect="fadeIn">
-												<h1>受講申し込み</h1>
-										</div>
+											<div class="display-tc animate-box" data-animate-effect="fadeIn">
+													<h1>ログイン</h1>
+											</div>
 									</div>
 							</div>
 					</div>
@@ -144,11 +142,52 @@
 
 	<div id="fh5co-contact">
 		<div class="container">
-			<h2>お申込みいただきありがとうございます。<br><a href="mypage.html">Myページ</a>より受講内容をご確認ください。</h2>
-			<p><a href="index.html">トップに戻る</a></p>
+			<div class="row">
+				<div class="col-md-5 col-md-push-1 animate-box">
+
+					<div class="fh5co-contact-info">
+
+				<div class="col-md-6 animate-box login">
+					<form action="mypage.html" method ="post">
+						<h3>ログイン</h3>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="lname">Last Name</label> -->
+								<input type="text" id="log_id" class="form-control" placeholder="ID">
+							</div>
+
+							<div class="col-md-12">
+								<!-- <label for="lname">Last Name</label> -->
+								<input type="text" id="log_pass" class="form-control" placeholder="パスワード">
+							</div>
+
+						<div class="form-group">
+							<input type="submit" value="ログイン" class="btn btn-primary">
+						</div>
+
+					</form>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
+
+		<div id="fh5co-started" style="background-image:url(images/img3.jpg);">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>サービスを利用する</h2>
+						<p>子どもたちの未来を一緒に作りませんか。</p>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p><a href="apply.html" class="btn btn-default btn-lg">受講申し込み</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
